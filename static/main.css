@@ -1,16 +1,11 @@
 *{
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
-body{
-  margin:0;
-  font-family: 'Kalam', cursive;
-  font-size:1rem;
-  font-weight:normal;
-  line-height:1.5;
-  color:#333;
-  overflow-x:hidden;
-}
+
 
 .v-header{
   height:100vh;
@@ -19,7 +14,7 @@ body{
   color:#fff;
 }
 
-.container{
+.top-container{
   max-width:960px;
   padding-left:1rem;
   padding-right:1rem;
@@ -59,6 +54,8 @@ body{
 .header-content h1{
   font-size:100px;
   margin-bottom:0;
+  font-family: 'Kalam', cursive;
+
 
 }
 
@@ -66,6 +63,7 @@ body{
   font-size:1.5rem;
   display:block;
   padding-bottom:2rem;
+  font-family: 'Kalam', cursive;
 
 }
 
@@ -86,10 +84,15 @@ body{
   font-size: 30px;
 }
 
-.section-b{
-  background:#60CCFF;
-  color:#fff;
+.section p{
+  text-align: center;
+  margin-left: 10px;
+  font-family: 'Kalam', cursive;
+
 }
+
+
+
 
 @media(max-width:960px){
   .container{
@@ -98,60 +101,72 @@ body{
   }
 }
 
+#resources-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #ebf5fc;
 
 
-.card-container{
-  position: relative;
-  justify-content: space-around;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  width:1100px;
 }
 
-.card{
-  width: 500px;
-  margin: 200px;
+.container{
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 1100px;
+
+}
+
+.container .card{
+  width: 320px;
+  margin: 20px;
   padding: 40px 30px;
-  background: #ebf5fc;
+  background: #add8e6;
   border-radius: 40px;
   box-shadow: -6px -6px 20px rgba(255, 255, 255, 0.1),
                6px 6px 20px rgba(0,0,0,0.1);
-
 }
 
-
-.card:hover{
+.container .card:hover{
   box-shadow: inset -6px -6px 20px rgba(255, 255, 255, 0.5),
                inset 6px 6px 20px rgba(0,0,0,0.05);
 }
 
-.imgBx{
+.container .card .imgBx{
   position: relative;
   text-align: center;
+
 }
 
-.imgBx:hover, .contentBx:hover{
-  transform: scale(.98);
-}
 
-.contentBx{
+.container .card .contentBx{
   position: relative;
   margin-top: 20px;
   text-align: center;
+  font-family: 'Poppins', sans-serif;
+
 }
 
-.contentBx a{
+
+.container .card .contentBx h2{
+  color: black;
+  font-weight: 700;
+  font-size: 1.4em;
+  letter-spacing: 1px;
+}
+
+.container .card .contentBx p{
+  color: #black;
+}
+
+.container .card .contentBx a{
   display: inline-block;
-  padding: 10px 20px;
-  margin-top: 15px;
+  padding:  10px 20px;
+  margin-top: 100px;
   border-radius: 40px;
   color: #32a3b1;
   font-size: 16px;
@@ -160,21 +175,27 @@ body{
                4px 4px 15px rgba(0,0,0,0.1);
 }
 
-.contentBx a:hover{
+.container .card .contentBx a:hover{
   box-shadow: inset -4px -4px 10px rgba(255, 255, 255, 0.5),
               inset 4px 4px 10px rgba(0,0,0,0.1);
 }
 
-.contentBx a:hover span{
+.container .card .contentBx a:hover span{
   display: block;
   transform: scale(0.98);
 }
 
+.container .card:hover .imgBx,
+.container .card:hover .contentBx{
+  transform: scale(.98);
 
-#contentbox{
+}
+
+
+.message-section{
   text-align: center;
-  font-size: 20px;
-  color: black;
-  font-weight: 1.4em;
-  letter-spacing: 1px;
+}
+
+.message-section h1{
+  font-size: 50px;
 }
