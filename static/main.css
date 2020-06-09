@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-body{
+.main-page{
   margin:0;
   font-family: 'Kalam', cursive;
   font-size:1rem;
