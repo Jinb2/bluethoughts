@@ -1,0 +1,209 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+.v-header{
+  height:100vh;
+  display:flex;
+  align-items:center;
+  color:#fff;
+}
+
+.top-container{
+  max-width:960px;
+  padding-left:1rem;
+  padding-right:1rem;
+  margin:auto;
+  text-align:center;
+}
+
+#video-container{
+  padding-left:1rem;
+  padding-right:1rem;
+  padding-bottom: 5rem;
+  margin:auto;
+  text-align:center;
+  padding
+}
+
+.fullscreen-video-wrap{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100vh;
+  overflow:hidden;
+}
+
+.fullscreen-video-wrap video{
+  min-height:100%;
+  min-width:100%;
+}
+
+.header-overlay{
+  height:100vh;
+  position: absolute;
+  top:0;
+  left:0;
+  width:100vw;
+  z-index:1;
+  background:#225470;
+  opacity:0.85;
+}
+
+.header-content{
+  z-index:2;
+}
+
+.header-content h1{
+  font-size:100px;
+  margin-bottom:0;
+  font-family: 'Kalam', cursive;
+}
+
+.header-content p{
+  font-size:1.5rem;
+  display:block;
+  padding-bottom:2rem;
+  font-family: 'Kalam', cursive;
+
+}
+
+.btn{
+  background: #00008b;
+  color:#fff;
+  font-size:1.2rem;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  font-family: 'Kalam', cursive;
+}
+
+
+
+.section{
+  padding:20px 0;
+  font-family: 'Kalam', cursive;
+  font-size: 30px;
+  background-color: #6394d3;
+}
+
+.section p{
+  text-align: center;
+  margin-left: 10px;
+  font-family: 'Kalam', cursive;
+
+}
+
+
+
+
+@media(max-width:960px){
+  .container{
+    padding-right:3rem;
+    padding-left:3rem;
+  }
+}
+
+#resources-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #203772;
+
+
+}
+
+.container{
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 1100px;
+
+}
+
+.container .card{
+  width: 320px;
+  margin: 20px;
+  padding: 40px 30px;
+  background: #add8e6;
+  border-radius: 40px;
+  box-shadow: -6px -6px 20px rgba(255, 255, 255, 0.1),
+               6px 6px 20px rgba(0,0,0,0.1);
+}
+
+.container .card:hover{
+  box-shadow: inset -6px -6px 20px rgba(255, 255, 255, 0.5),
+               inset 6px 6px 20px rgba(0,0,0,0.05);
+}
+
+.container .card .imgBx{
+  position: relative;
+  text-align: center;
+
+}
+
+
+.container .card .contentBx{
+  position: relative;
+  margin-top: 20px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+
+.container .card .contentBx h2{
+  color: black;
+  font-weight: 700;
+  font-size: 1.4em;
+  letter-spacing: 1px;
+}
+
+.container .card .contentBx p{
+  color: #black;
+}
+
+.container .card .contentBx a{
+  display: inline-block;
+  padding:  10px 20px;
+  margin-top: 100px;
+  border-radius: 40px;
+  color: #32a3b1;
+  font-size: 16px;
+  text-decoration: none;
+  box-shadow: -4px -4px 15px rgba(255, 255, 255, 1),
+               4px 4px 15px rgba(0,0,0,0.1);
+}
+
+.container .card .contentBx a:hover{
+  box-shadow: inset -4px -4px 10px rgba(255, 255, 255, 0.5),
+              inset 4px 4px 10px rgba(0,0,0,0.1);
+}
+
+.container .card .contentBx a:hover span{
+  display: block;
+  transform: scale(0.98);
+}
+
+.container .card:hover .imgBx,
+.container .card:hover .contentBx{
+  transform: scale(.98);
+
+}
+
+
+.message-section{
+  text-align: center;
+}
+
+.message-section h1{
+  font-size: 50px;
+}

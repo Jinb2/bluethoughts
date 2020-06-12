@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Submit a thought - blue thoughts</title>
+    <link rel="stylesheet" href="../static/submit.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+  </head>
+<h1>All thoughts are anonymous. Inappropriate submissions will be deleted. <br>Note: You will not be able to delete a submission once it has been submited.</h1>
+   <form action="" method="post" novalidate>
+     {{ form.hidden_tag() }}
+     {% if form.location.errors %}
+         {{ form.location(class="feedback-input",placeholder="Where are you from?") }}
+             <div>
+               {% for error in form.location.errors %}
+              <span style="color: red; font-family: 'Poppins', sans-serif;">[{{ error }}]</span>
+               {% endfor %}
+             </div>
+       {% else %}
+           {{ form.location(class="feedback-input",placeholder="Where are you from?") }}
+       {% endif %}
+     {% if form.keywords.errors %}
+         {{ form.keywords(class="feedback-input",placeholder="keywords..") }}
+             <div>
+               {% for error in form.keywords.errors %}
+                   <span style="color: red; font-family: 'Poppins', sans-serif;">[{{ error }}]</span>
+               {% endfor %}
+             </div>
+       {% else %}
+           {{ form.keywords(class="feedback-input",placeholder="keywords..") }}
+       {% endif %}
+     {% if form.message.errors %}
+         {{ form.message(class="feedback-input",placeholder="Your thoughts...") }}
+             <div>
+               {% for error in form.message.errors %}
+                   <span style="color: red; font-family: 'Poppins', sans-serif;">[{{ error }}]</span>
+               {% endfor %}
+             </div>
+       {% else %}
+           {{ form.message(class="feedback-input",placeholder="Your thoughts...",) }}
+       {% endif %}
+     {{ form.submit()}}
+   </form>
+</html>
