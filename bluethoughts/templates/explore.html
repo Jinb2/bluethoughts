@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/explore.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap" rel="stylesheet">
+    <title>blue-thoughts</title>
+  </head>
+  <body class="explore-page">
+    <header>
+      <nav>
+      <div class="bar">
+        <a style="font-family: 'Kalam', cursive;" class="architect-font hvr-grow" href="{{url_for('home')}}">Blue Thoughts</a>
+          <a style="font-family: 'Kalam', cursive;" class="normal-font hvr-grow" href="{{url_for('submit')}}">Submit a thought...</a>
+      </div>
+      </nav>
+    </header>
+    <main>
+      <body>
+        <div class="container">
+          <div style="font-family: 'Kalam', cursive;" class="box-thoughts">
+            {% for post in posts.items %}
+            <span>{{ post.location }}</span>
+            <br><span> Keywords: {{post.keywords}}</span>
+            <br><p> {{post.message}} </p>
+            {% endfor %}
+          </div>
+          </div>
+      </body>
+    </main>
+    <div style="position: absolute; bottom: 0px;" class="container">
+      {% for page_num in posts.iter_pages() %}
+      {% if page_num %}
+        <a style="background-color: #008CBA;  border: none;  color: white;  padding: 15px 32px;  text-align: center;  text-decoration: none;  display: inline-block;  font-size: 16px;" href="{{url_for('explore',page=page_num)}}">{{ page_num }}</a>
+      {% else %}
+        ...
+      {% endif %}
+      {% endfor %}
+    </div>
+  </body>
+</html>
