@@ -7,7 +7,7 @@ from bluethoughts.models import Post
 @app.route('/')
 @app.route('/home')
 def home():
-    return render_template('main.html')
+    return render_template('home.html')
 
 @app.route('/submit/new', methods=['GET','POST'])
 def submit():
