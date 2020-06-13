@@ -3,10 +3,12 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
-  overflow: hidden;
 }
 
+#scroll{
+  overflow: hidden;
 
+}
 
 .v-header{
   height:100vh;
