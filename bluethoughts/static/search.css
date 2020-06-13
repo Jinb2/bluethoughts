@@ -9,6 +9,9 @@
   color: #56585b;
 }
 
+::-webkit-scrollbar {
+    display: none;
+
 ::-moz-placeholder {
   color: #56585b;
 }

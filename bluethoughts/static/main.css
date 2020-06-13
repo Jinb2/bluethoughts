@@ -5,7 +5,8 @@
   font-family: 'Poppins', sans-serif;
 }
 
-
+::-webkit-scrollbar {
+    display: none;
 
 .v-header{
   height:100vh;
