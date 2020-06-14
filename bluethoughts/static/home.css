@@ -205,12 +205,10 @@
   font-family: sans-serif;
   color: white;
   margin: 40px;
-  min-height: 100vh;
-}
-
-.explain-box p{
   align-items: center;
 }
+
+
 .series{
   display: flex;
   flex-direction: column;
