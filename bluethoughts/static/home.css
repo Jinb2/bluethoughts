@@ -200,7 +200,9 @@
 }
 
 
-
+#message-section{
+  background: #203772; min-height: 100vh; text-align: center;
+}
 
 .explain-box{
   font-family: sans-serif;
