@@ -200,10 +200,23 @@
 }
 
 
-.message-section{
-  text-align: center;
+
+
+.explain-box{
+  font-family: sans-serif;
+  color: white;
+  margin: 40px;
+  min-height: 100vh;
 }
 
-.message-section h1{
-  font-size: 50px;
+.explain-box p{
+  align-items: center;
+}
+.series{
+  display: flex;
+  flex-direction: column;
+  margin: 60px;
+  font-size: 45px;
+  font-style: italic;
+  color: white;
 }
