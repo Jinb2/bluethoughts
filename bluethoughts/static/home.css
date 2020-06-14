@@ -198,22 +198,3 @@
   transform: scale(.98);
 
 }
-
-
-
-.explain-box{
-  font-family: sans-serif;
-  color: white;
-  margin: 40px;
-  align-items: center;
-}
-
-
-.series{
-  display: flex;
-  flex-direction: column;
-  margin: 60px;
-  font-size: 45px;
-  font-style: italic;
-  color: white;
-}
